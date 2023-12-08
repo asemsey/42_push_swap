@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   sort.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 13:51:55 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/03 16:58:28 by asemsey          ###   ########.fr       */
+/*   Created: 2023/12/07 14:08:48 by asemsey           #+#    #+#             */
+/*   Updated: 2023/12/08 12:15:11 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_list	*ft_lstnew(int content)
+void	sort(t_list **a, t_list **b)
 {
-	t_list	*node;
+	int	len;
 
-	node = malloc(sizeof(t_list));
-	if (!node)
-		return (NULL);
-	if (!content)
+	len = ft_lstsize(*a);
+	while (len > 3)
 	{
-		node->content = 0;
-		node->next = NULL;
-		return (node);
+		pb(a, b);
+		len--;
 	}
-	node->content = content;
-	node->next = NULL;
-	return (node);
+	set_nodes(a, b);
 }

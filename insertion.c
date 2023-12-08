@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bubblesort.c                                       :+:      :+:    :+:   */
+/*   insertion.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 13:38:15 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/06 14:03:51 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/07 14:58:46 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void	find_place(t_list **stack_a, t_list **stack_b)
 	pa(stack_a, stack_b);
 }
 
-void	bubble(t_list **stack_a, t_list **stack_b)
+void	insertion(t_list **stack_a, t_list **stack_b)
 {
 	while (ft_lstsize(*stack_a) > 3)
 		pb(stack_a, stack_b);

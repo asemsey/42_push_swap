@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 11:23:56 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/06 13:37:43 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/08 12:11:01 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,6 @@ int	main(int argc, char **argv)
 		i++;
 	}
 	if (node && node[0])
-		bubble(&node[0], &node[1]);
+		insertion(&node[0], &node[1]);
 	return (0);
 }

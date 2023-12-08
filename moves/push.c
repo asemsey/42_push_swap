@@ -6,11 +6,11 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 10:07:17 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/06 14:05:49 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/08 12:12:17 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 // contents: pa, pb
 
 // push from b to a

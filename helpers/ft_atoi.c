@@ -6,11 +6,11 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 15:42:54 by asemsey           #+#    #+#             */
-/*   Updated: 2023/11/30 15:43:16 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/08 12:11:35 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 static int	ft_isspace(char c)
 {

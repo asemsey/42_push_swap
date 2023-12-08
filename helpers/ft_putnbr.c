@@ -6,11 +6,11 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 10:06:33 by asemsey           #+#    #+#             */
-/*   Updated: 2023/11/29 10:07:28 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/08 12:11:33 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 static void	ft_cases(int nbr)
 {

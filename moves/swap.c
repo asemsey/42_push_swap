@@ -6,11 +6,11 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 16:47:03 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/06 14:04:29 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/08 12:12:12 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 // contents: sa, sb, ss
 
 // swap

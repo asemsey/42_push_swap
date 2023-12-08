@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 11:03:13 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/05 12:22:23 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/08 12:13:11 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 typedef struct s_list
 {
 	int				content;
+	int				pos;
+	struct s_list	*target;
 	struct s_list	*next;
 }	t_list;
 
@@ -26,8 +28,12 @@ typedef struct s_list
 int		issorted(t_list *stack);
 t_list	*highest(t_list *node);
 t_list	*lowest(t_list *node);
+void	set_nodes(t_list **a, t_list **b);
 void	mini_sort(t_list **stack);
-void	bubble(t_list **stack_a, t_list **stack_b);
+// algorithms
+void	sort(t_list **a, t_list **b);
+void	insertion(t_list **stack_a, t_list **stack_b);
+
 // moves
 void	sa(t_list **stack_a);
 void	sb(t_list **stack_b);

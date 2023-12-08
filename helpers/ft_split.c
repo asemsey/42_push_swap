@@ -6,11 +6,11 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 15:28:00 by asemsey           #+#    #+#             */
-/*   Updated: 2023/11/30 15:37:31 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/08 12:11:31 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 int	wordcount(const char *str, char c)
 {

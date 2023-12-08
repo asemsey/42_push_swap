@@ -6,11 +6,11 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 10:24:01 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/05 12:23:52 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/08 12:12:16 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 // contents: rra, rrb, rrr
 
 // reverse rotate
