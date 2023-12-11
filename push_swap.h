@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 11:03:13 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/08 12:13:11 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/11 16:45:46 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ typedef struct s_list
 {
 	int				content;
 	int				pos;
+	int				moves;
 	struct s_list	*target;
 	struct s_list	*next;
 }	t_list;
@@ -28,11 +29,11 @@ typedef struct s_list
 int		issorted(t_list *stack);
 t_list	*highest(t_list *node);
 t_list	*lowest(t_list *node);
+void	set_pos(t_list **stack);
 void	set_nodes(t_list **a, t_list **b);
 void	mini_sort(t_list **stack);
-// algorithms
+// algorithm
 void	sort(t_list **a, t_list **b);
-void	insertion(t_list **stack_a, t_list **stack_b);
 
 // moves
 void	sa(t_list **stack_a);
@@ -55,6 +56,7 @@ int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstprint(t_list *lst);
+void	free_lst(t_list **lst);
 // helpers
 void	ft_putnbr(int n);
 int		ft_atoi(const char *str);

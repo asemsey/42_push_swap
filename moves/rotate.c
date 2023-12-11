@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 10:19:16 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/08 12:12:14 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/11 14:39:42 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ void	r(t_list **stack)
 void	ra(t_list **stack_a)
 {
 	r(stack_a);
+	set_pos(stack_a);
 	write(1, "ra\n", 3);
 }
 
@@ -40,6 +41,7 @@ void	ra(t_list **stack_a)
 void	rb(t_list **stack_b)
 {
 	r(stack_b);
+	set_pos(stack_b);
 	write(1, "rb\n", 3);
 }
 
@@ -48,5 +50,7 @@ void	rr(t_list **stack_a, t_list **stack_b)
 {
 	r(stack_a);
 	r(stack_b);
+	set_pos(stack_a);
+	set_pos(stack_b);
 	write(1, "rr\n", 3);
 }

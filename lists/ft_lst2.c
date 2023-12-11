@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 16:05:20 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/08 12:11:48 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/11 16:45:44 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,16 @@ t_list	*ft_lstlast(t_list *lst)
 	while (lst && lst->next)
 		lst = lst->next;
 	return (lst);
+}
+
+void	free_lst(t_list **lst)
+{
+	t_list	*tmp;
+
+	while (*lst)
+	{
+		tmp = *lst;
+		*lst = (*lst)->next;
+		free(tmp);
+	}
 }

@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 14:00:55 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/08 12:11:50 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/11 16:19:49 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,10 +69,8 @@ void	ft_lstprint(t_list *lst)
 {
 	while (lst)
 	{
-		ft_putnbr((int)lst->content);
+		ft_putnbr(lst->content);
 		write(1, " ", 1);
-		if (!lst->next)
-			break ;
 		lst = lst->next;
 	}
 	write(1, "\n", 1);

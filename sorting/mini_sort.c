@@ -6,12 +6,13 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 12:25:02 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/06 14:06:16 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/11 16:01:27 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
+// checks if stack is in ascending order
 int	issorted(t_list *stack)
 {
 	while (stack && stack->next)
@@ -55,13 +56,19 @@ t_list	*lowest(t_list *node)
 	return (lowest);
 }
 
+// sorts 3 or less numbers
 void	mini_sort(t_list **stack)
 {
-	if (ft_lstsize(*stack) <= 3)
+	int	len;
+
+	len = ft_lstsize(*stack);
+	if (len == 1)
+		return ;
+	if (len <= 3)
 	{
-		if (*stack == highest(*stack))
+		if (len == 3 && *stack == highest(*stack))
 			ra(stack);
-		else if ((*stack)->next == highest(*stack))
+		else if (len == 3 && (*stack)->next == highest(*stack))
 			rra(stack);
 		if ((*stack)->content > (*stack)->next->content)
 			sa(stack);
