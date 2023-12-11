@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 11:47:47 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/11 15:01:30 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/11 17:51:33 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,9 @@ void	get_target(t_list **a, t_list **b_node)
 	}
 	while (*a && (*b_node)->target)
 	{
-		if ((*a)->content > (*b_node)->content && (*a)->content - (*b_node)->content < (*b_node)->target->content - (*b_node)->content)
+		if ((*a)->content > (*b_node)->content
+			&& (*a)->content - (*b_node)->content
+			< (*b_node)->target->content - (*b_node)->content)
 			(*b_node)->target = *a;
 		*a = (*a)->next;
 	}
@@ -96,8 +98,6 @@ void	set_moves(t_list **a, t_list **b)
 	*b = head;
 }
 
-
-// reconsider pls
 void	set_nodes(t_list **a, t_list **b)
 {
 	set_pos(a);

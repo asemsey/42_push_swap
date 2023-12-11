@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 11:23:56 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/11 16:47:48 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/11 17:45:59 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int	valid(char *str)
 	{
 		if (*str == '-')
 			str++;
-		if (*str < '0' || '9' < *str)
-				return (0);
+		else if (*str < '0' || '9' < *str)
+			return (0);
 		while (*str && *str != ' ')
 		{
 			if (*str < '0' || '9' < *str)
@@ -112,33 +112,3 @@ int	main(int argc, char **argv)
 	free_lst(&b);
 	return (0);
 }
-
-
-// to check nodes:
-// sort(&node[0], &node[1]);
-// 	write(1, "list 1:\n", 9);
-// 	tmp = node[0];
-// 	while (tmp)
-// 	{
-// 		ft_putnbr(tmp->content);
-// 		write(1, "   p: ", 7);
-// 		ft_putnbr(tmp->pos);
-// 		write(1, "   m: ", 7);
-// 		ft_putnbr(tmp->moves);
-// 		write(1, "\n", 1);
-// 		tmp = tmp->next;
-// 	}
-// 	write(1, "list 2:\n", 9);
-// 	tmp = node[1];
-// 	while (tmp)
-// 	{
-// 		ft_putnbr(tmp->content);
-// 		write(1, "   p: ", 7);
-// 		ft_putnbr(tmp->pos);
-// 		write(1, "   m: ", 7);
-// 		ft_putnbr(tmp->moves);
-// 		write(1, "   tar: ", 9);
-// 		ft_putnbr(tmp->target->content);
-// 		write(1, "\n", 1);
-// 		tmp = tmp->next;
-// 	}
