@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 14:08:48 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/11 15:01:37 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/12 12:42:38 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,8 @@ void	sort(t_list **a, t_list **b)
 {
 	int	len;
 
+	if (issorted(*a))
+		return ;
 	len = ft_lstsize(*a);
 	while (len > 3)
 	{

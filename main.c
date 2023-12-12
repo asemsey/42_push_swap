@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 11:23:56 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/11 17:45:59 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/12 14:06:42 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,11 @@ int	*create_stack(char *arg)
 	while (i < wordcount(arg, ' '))
 	{
 		n[i] = ft_atoi(nums[i]);
+		if (ft_strncmp(ft_itoa(n[i]), nums[i], 100) != 0 && n[i] != 0)
+		{
+			free_all(nums);
+			return (free(n), NULL);
+		}
 		i++;
 	}
 	free_all(nums);
@@ -81,7 +86,7 @@ int	*create_stack(char *arg)
 
 int	print_error(t_list **lst)
 {
-	write(1, "Error\n", 7);
+	write(2, "Error\n", 6);
 	if (*lst)
 		free_lst(lst);
 	return (1);
@@ -96,6 +101,8 @@ int	main(int argc, char **argv)
 
 	i = 1;
 	b = NULL;
+	if (argc == 1)
+		return (1);
 	while (i < argc)
 	{
 		n = create_stack(argv[i]);

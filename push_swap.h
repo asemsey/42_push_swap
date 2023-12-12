@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 11:03:13 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/11 16:45:46 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/12 13:52:43 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,8 @@ void	free_lst(t_list **lst);
 // helpers
 void	ft_putnbr(int n);
 int		ft_atoi(const char *str);
+char	*ft_itoa(int n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		wordcount(const char *str, char c);
 char	**free_all(char **strs);
 char	**ft_split(const char *str, char c);
