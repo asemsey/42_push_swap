@@ -6,7 +6,7 @@
 /*   By: asemsey <asemsey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 13:49:40 by asemsey           #+#    #+#             */
-/*   Updated: 2023/12/12 13:52:54 by asemsey          ###   ########.fr       */
+/*   Updated: 2023/12/13 10:40:42 by asemsey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,4 +99,18 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	if (i == n)
 		return (0);
 	return (t1[i] - t2[i]);
+}
+
+int	check_max(int num, char *str)
+{
+	char	*n;
+
+	n = ft_itoa(num);
+	if (ft_strncmp(n, str, 100) != 0 && num != 0)
+	{
+		free(n);
+		return (1);
+	}
+	free(n);
+	return (0);
 }
